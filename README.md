@@ -161,12 +161,6 @@ Toda vez que um push é feito na branch `main`, o seguinte fluxo é executado au
 
 ---
 
-## 📸 Diagrama de arquitetura
-
-![Arquitetura FintechX](./docs/arquitetura.png)
-
----
-
 ## 👨‍💻 Autor
 
 Desenvolvido por [Diego Richalski Santos](https://github.com/diegorichalskisantos)  
