@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pymysql
+sqlalchemy
+python-dotenv
+openai>=1.0.0
+matplotlib
+faiss-cpu
+sentence-transformers

@@ -1,0 +1,4 @@
+[
+  "Tabela: products\nCampos:\n- supplier_ids: longtext\n- id: int\n- product_code: varchar(25)\n- product_name: varchar(50)\n- description: longtext\n- standard_cost: decimal(19,4)\n- list_price: decimal(19,4)\n- reorder_level: int\n- target_level: int\n- quantity_per_unit: varchar(50)\n- discontinued: tinyint(1)\n- minimum_reorder_quantity: int\n- category: varchar(50)\n- attachments: longblob",
+  "Tabela: order_details\nCampos:\n- id: int\n- order_id: int\n- product_id: int\n- quantity: int\n- unit_price: decimal(19,4)\n- discount: decimal(4,2)"
+]

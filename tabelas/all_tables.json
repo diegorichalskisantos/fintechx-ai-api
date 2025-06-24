@@ -1,0 +1,545 @@
+{
+  "tabela": "customers",
+  "colunas": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "company",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "last_name",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "first_name",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "email_address",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "job_title",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "business_phone",
+      "Type": "varchar(25)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "home_phone",
+      "Type": "varchar(25)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "mobile_phone",
+      "Type": "varchar(25)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "fax_number",
+      "Type": "varchar(25)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "address",
+      "Type": "longtext",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "city",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "state_province",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "zip_postal_code",
+      "Type": "varchar(15)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "country_region",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "web_page",
+      "Type": "longtext",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "notes",
+      "Type": "longtext",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "attachments",
+      "Type": "longblob",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    }
+  ]
+}
+{
+  "tabela": "products",
+  "colunas": [
+    {
+      "Field": "supplier_ids",
+      "Type": "longtext",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "product_code",
+      "Type": "varchar(25)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "product_name",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "description",
+      "Type": "longtext",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "standard_cost",
+      "Type": "decimal(19,4)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0.0000",
+      "Extra": ""
+    },
+    {
+      "Field": "list_price",
+      "Type": "decimal(19,4)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0.0000",
+      "Extra": ""
+    },
+    {
+      "Field": "reorder_level",
+      "Type": "int",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "target_level",
+      "Type": "int",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "quantity_per_unit",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "discontinued",
+      "Type": "tinyint(1)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "minimum_reorder_quantity",
+      "Type": "int",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "category",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "attachments",
+      "Type": "longblob",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    }
+  ]
+}
+
+{
+  "tabela": "employees",
+  "colunas": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "company",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "last_name",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "first_name",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "email_address",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "job_title",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "business_phone",
+      "Type": "varchar(25)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "home_phone",
+      "Type": "varchar(25)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "mobile_phone",
+      "Type": "varchar(25)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "fax_number",
+      "Type": "varchar(25)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "address",
+      "Type": "longtext",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "city",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "state_province",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "zip_postal_code",
+      "Type": "varchar(15)",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "country_region",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "web_page",
+      "Type": "longtext",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "notes",
+      "Type": "longtext",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "attachments",
+      "Type": "longblob",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    }
+  ]
+}
+
+{
+  "tabela": "inventory_transaction_types",
+  "colunas": [
+    {
+      "Field": "id",
+      "Type": "tinyint",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "type_name",
+      "Type": "varchar(50)",
+      "Null": "NO",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    }
+  ]
+}
+
+{
+  "tabela": "inventory_transactions",
+  "colunas": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "transaction_type",
+      "Type": "tinyint",
+      "Null": "NO",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "transaction_created_date",
+      "Type": "datetime",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "transaction_modified_date",
+      "Type": "datetime",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "product_id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "quantity",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "purchase_order_id",
+      "Type": "int",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "customer_order_id",
+      "Type": "int",
+      "Null": "YES",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "comments",
+      "Type": "varchar(255)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    }
+  ]
+}
+{"tabela":"invoices","colunas":[{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"},{"Field":"order_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"invoice_date","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"due_date","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"tax","Type":"decimal(19,4)","Null":"YES","Key":"","Default":"0.0000","Extra":""},{"Field":"shipping","Type":"decimal(19,4)","Null":"YES","Key":"","Default":"0.0000","Extra":""},{"Field":"amount_due","Type":"decimal(19,4)","Null":"YES","Key":"","Default":"0.0000","Extra":""}]}
+
+{"tabela":"order_details","colunas":[{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"},{"Field":"order_id","Type":"int","Null":"NO","Key":"MUL","Default":null,"Extra":""},{"Field":"product_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"quantity","Type":"decimal(18,4)","Null":"NO","Key":"","Default":"0.0000","Extra":""},{"Field":"unit_price","Type":"decimal(19,4)","Null":"YES","Key":"","Default":"0.0000","Extra":""},{"Field":"discount","Type":"double","Null":"NO","Key":"","Default":"0","Extra":""},{"Field":"status_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"date_allocated","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"purchase_order_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"inventory_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""}]}
+
+{"tabela":"order_details_status","colunas":[{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":""},{"Field":"status_name","Type":"varchar(50)","Null":"NO","Key":"","Default":null,"Extra":""}]}
+
+{"tabela":"orders","colunas":[{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"},{"Field":"employee_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"customer_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"order_date","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"shipped_date","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"shipper_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"ship_name","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"ship_address","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"ship_city","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"ship_state_province","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"ship_zip_postal_code","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"ship_country_region","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"shipping_fee","Type":"decimal(19,4)","Null":"YES","Key":"","Default":"0.0000","Extra":""},{"Field":"taxes","Type":"decimal(19,4)","Null":"YES","Key":"","Default":"0.0000","Extra":""},{"Field":"payment_type","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"paid_date","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"notes","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"tax_rate","Type":"double","Null":"YES","Key":"","Default":"0","Extra":""},{"Field":"tax_status_id","Type":"tinyint","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"status_id","Type":"tinyint","Null":"YES","Key":"MUL","Default":"0","Extra":""}]}
+
+{"tabela":"orders_status","colunas":[{"Field":"id","Type":"tinyint","Null":"NO","Key":"PRI","Default":null,"Extra":""},{"Field":"status_name","Type":"varchar(50)","Null":"NO","Key":"","Default":null,"Extra":""}]}
+
+{"tabela":"orders_tax_status","colunas":[{"Field":"id","Type":"tinyint","Null":"NO","Key":"PRI","Default":null,"Extra":""},{"Field":"tax_status_name","Type":"varchar(50)","Null":"NO","Key":"","Default":null,"Extra":""}]}
+
+{"tabela":"privileges","colunas":[{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"},{"Field":"privilege_name","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""}]}
+
+{"tabela":"products","colunas":[{"Field":"supplier_ids","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"},{"Field":"product_code","Type":"varchar(25)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"product_name","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"description","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"standard_cost","Type":"decimal(19,4)","Null":"YES","Key":"","Default":"0.0000","Extra":""},{"Field":"list_price","Type":"decimal(19,4)","Null":"NO","Key":"","Default":"0.0000","Extra":""},{"Field":"reorder_level","Type":"int","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"target_level","Type":"int","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"quantity_per_unit","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"discontinued","Type":"tinyint(1)","Null":"NO","Key":"","Default":"0","Extra":""},{"Field":"minimum_reorder_quantity","Type":"int","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"category","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"attachments","Type":"longblob","Null":"YES","Key":"","Default":null,"Extra":""}]}
+
+{"tabela":"purchase_order_details","colunas":[{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"},{"Field":"purchase_order_id","Type":"int","Null":"NO","Key":"MUL","Default":null,"Extra":""},{"Field":"product_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"quantity","Type":"decimal(18,4)","Null":"NO","Key":"","Default":null,"Extra":""},{"Field":"unit_cost","Type":"decimal(19,4)","Null":"NO","Key":"","Default":null,"Extra":""},{"Field":"date_received","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"posted_to_inventory","Type":"tinyint(1)","Null":"NO","Key":"","Default":"0","Extra":""},{"Field":"inventory_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""}]}
+
+{"tabela":"purchase_order_status","colunas":[{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":""},{"Field":"status","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""}]}
+
+{"tabela":"purchase_orders","colunas":[{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"},{"Field":"supplier_id","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"created_by","Type":"int","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"submitted_date","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"creation_date","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"status_id","Type":"int","Null":"YES","Key":"MUL","Default":"0","Extra":""},{"Field":"expected_date","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"shipping_fee","Type":"decimal(19,4)","Null":"NO","Key":"","Default":"0.0000","Extra":""},{"Field":"taxes","Type":"decimal(19,4)","Null":"NO","Key":"","Default":"0.0000","Extra":""},{"Field":"payment_date","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"payment_amount","Type":"decimal(19,4)","Null":"YES","Key":"","Default":"0.0000","Extra":""},{"Field":"payment_method","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"notes","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"approved_by","Type":"int","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"approved_date","Type":"datetime","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"submitted_by","Type":"int","Null":"YES","Key":"","Default":null,"Extra":""}]}
+
+{"tabela":"sales_reports","colunas":[{"Field":"group_by","Type":"varchar(50)","Null":"NO","Key":"PRI","Default":null,"Extra":""},{"Field":"display","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"title","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"filter_row_source","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"default","Type":"tinyint(1)","Null":"NO","Key":"","Default":"0","Extra":""}]}
+
+{"tabela":"shippers","colunas":[{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"},{"Field":"company","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"last_name","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"first_name","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"email_address","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"job_title","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"business_phone","Type":"varchar(25)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"home_phone","Type":"varchar(25)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"mobile_phone","Type":"varchar(25)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"fax_number","Type":"varchar(25)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"address","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"city","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"state_province","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"zip_postal_code","Type":"varchar(15)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"country_region","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"web_page","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"notes","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"attachments","Type":"longblob","Null":"YES","Key":"","Default":null,"Extra":""}]}
+
+{"tabela":"strings","colunas":[{"Field":"string_id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"},{"Field":"string_data","Type":"varchar(255)","Null":"YES","Key":"","Default":null,"Extra":""}]}
+
+{"tabela":"suppliers","colunas":[{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null,"Extra":"auto_increment"},{"Field":"company","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"last_name","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"first_name","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"email_address","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"job_title","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"business_phone","Type":"varchar(25)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"home_phone","Type":"varchar(25)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"mobile_phone","Type":"varchar(25)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"fax_number","Type":"varchar(25)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"address","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"city","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"state_province","Type":"varchar(50)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"zip_postal_code","Type":"varchar(15)","Null":"YES","Key":"MUL","Default":null,"Extra":""},{"Field":"country_region","Type":"varchar(50)","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"web_page","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"notes","Type":"longtext","Null":"YES","Key":"","Default":null,"Extra":""},{"Field":"attachments","Type":"longblob","Null":"YES","Key":"","Default":null,"Extra":""}]}
